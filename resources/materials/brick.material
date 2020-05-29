@@ -1,0 +1,19 @@
+
+
+material brick_78af191374572b69c50315961552ab0a523f5c3b.jpg
+{
+	technique
+	{
+		pass 
+		{
+			diffuse 0.6 0.6 0.6 1
+
+			texture_unit
+			{
+				texture brick.jpg
+			}
+		}
+
+	}
+
+}

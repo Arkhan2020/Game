@@ -1,0 +1,19 @@
+
+
+material MtlPlat2_586188d9bcd9e5b964142956490f87d7a32c6bd3.png
+{
+	technique
+	{
+		pass 
+		{
+			diffuse 0.6 0.6 0.6 1
+
+			texture_unit
+			{
+				texture MtlPlat2.png
+			}
+		}
+
+	}
+
+}

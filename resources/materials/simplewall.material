@@ -1,0 +1,19 @@
+
+
+material simplewall_cb440ca9dd1bf8a43a2b772fde590286a2b302b1.png
+{
+	technique
+	{
+		pass 
+		{
+			diffuse 0.6 0.6 0.6 1
+
+			texture_unit
+			{
+				texture simplewall.png
+			}
+		}
+
+	}
+
+}

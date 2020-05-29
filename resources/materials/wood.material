@@ -1,0 +1,19 @@
+
+
+material wood_5a2d153753229de7e28faf602d83432c84d38524.jpg
+{
+	technique
+	{
+		pass 
+		{
+			diffuse 0.6 0.6 0.6 1
+
+			texture_unit
+			{
+				texture wood.jpg
+			}
+		}
+
+	}
+
+}

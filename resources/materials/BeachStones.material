@@ -1,0 +1,19 @@
+
+
+material BeachStones_d1e564fad14626caad2dc21a8d440e65bba718be.png
+{
+	technique
+	{
+		pass 
+		{
+			diffuse 0.6 0.6 0.6 1
+
+			texture_unit
+			{
+				texture BeachStones.png
+			}
+		}
+
+	}
+
+}

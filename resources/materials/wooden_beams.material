@@ -1,0 +1,19 @@
+
+
+material wooden_beams_48d3865011bae54bf50250f094d55a763f58cc8d.jpg
+{
+	technique
+	{
+		pass 
+		{
+			diffuse 0.6 0.6 0.6 1
+
+			texture_unit
+			{
+				texture wooden_beams.jpg
+			}
+		}
+
+	}
+
+}

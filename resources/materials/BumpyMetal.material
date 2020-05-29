@@ -1,0 +1,19 @@
+
+
+material BumpyMetal_dc3319293428be8372001c62ca1cfff26afd39e2.png
+{
+	technique
+	{
+		pass 
+		{
+			diffuse 0.6 0.6 0.6 1
+
+			texture_unit
+			{
+				texture BumpyMetal.png
+			}
+		}
+
+	}
+
+}

@@ -1,0 +1,19 @@
+
+
+material grass_f8d081b29769640ab9aaabcb9489486c007c39b1.jpg
+{
+	technique
+	{
+		pass 
+		{
+			diffuse 0.6 0.6 0.6 1
+
+			texture_unit
+			{
+				texture grass.jpg
+			}
+		}
+
+	}
+
+}
