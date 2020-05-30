@@ -11,7 +11,7 @@ material lensflare/halo
             scene_blend add
             texture_unit
             {
-                texture lensflare6.jpg
+                texture Lensflare6.jpg
             }
         }
     }
@@ -31,7 +31,7 @@ material lensflare/burst
             scene_blend add
             texture_unit
             {
-                texture lensflare5.jpg
+                texture Lensflare5.jpg
             }
         }
     }

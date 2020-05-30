@@ -77,6 +77,13 @@ def landing2(objeto,x,y):
 def landing3(objeto,x,y):
     return 1.5
 
+def spiralstair1_NE(objeto,x,y):
+    print ("espiralN")
+    if y==0:
+        return 0
+    if x==0:
+        return 0.667
+    return (y/x)*0.333
 
 
 ROT_DIR={"90":"E","180":"S","270":"O","0":"N"}
@@ -85,6 +92,7 @@ COLISION_TYPE = {"NP":solid,"":nocollision,
                  "E2N":stair2_N,"E2S":stair2_S,"E2E":stair2_E,"E2O":stair2_O,
                  "E3N":stair3_N,"E3S":stair3_S,"E3E":stair3_E,"E3O":stair3_O,
                  "E4N":stair4_N,"E4S":stair4_S,"E4E":stair4_E,"E4O":stair4_O,
+                 "SS1":spiralstair1_NE,"SS1E":spiralstair1_NE,
                  "L1":landing1, "L2":landing2, "L3":landing3}
 
 class collision_tiles:

@@ -2,10 +2,9 @@ import Ogre
 
 class LensFlare:
 
-    def __init__(self,LightPosition,camera,camnode,SceneMgr):
+    def __init__(self,LightPosition,camera,SceneMgr):
         self.mSceneMgr=SceneMgr
         self.mCamera=camera
-        self.camnode=camnode
         self.mHidden=True
         self.createlensflare()
         self.setLightPosition(LightPosition)
@@ -69,13 +68,13 @@ class LensFlare:
         else:
              self.mHaloSet.setVisible(True)
              self.mBurstSet.setVisible(True)
-        #self.LightDistance  = self.mLightPosition.distance(self.mCamera.getPosition())
+        self.LightDistance  = self.mLightPosition.distance(self.mCamera.getDerivedPosition())
         #self.CameraVect  = self.mCamera.getDirection() # normalized vector (length 1)
         #self.CameraVect = self.mCamera.getPosition() + (self.LightDistance * self.CameraVect)
         
-        self.LightDistance  = self.mLightPosition.distance(self.camnode.getPosition())
-        self.CameraVect  = self.camnode.getOrientation() * Ogre.Vector3(0, 0, -1)# normalized vector (length 1)
-        self.CameraVect = self.camnode.getPosition() + ( self.CameraVect *self.LightDistance)                
+        #self.LightDistance  = self.mLightPosition.distance(self.camnode.getDerivedPosition())
+        self.CameraVect = self.mCamera.getDerivedOrientation() * Ogre.Vector3(0, 0, -1)# normalized vector (length 1)
+        self.CameraVect = self.mCamera.getDerivedPosition() + ( self.CameraVect *self.LightDistance)                
 
         #The LensFlare effect takes place along this vector.
         self.LFvect = (self.CameraVect - self.mLightPosition)

@@ -12,8 +12,7 @@ import os.path
 import Ogretmxmap
 import Ogre.Overlay as OgreOverlay
 import Player
-import Lensflare
-
+import Skyefect
 
 def gettilepos(vector):
     return [vector.x,vector.z]
@@ -120,18 +119,6 @@ class Game(OgreBites.ApplicationContext, OgreBites.InputListener):
         #para que los objetos emitan shadow sobre si mismos
         scn_mgr.setShadowTextureSelfShadow(True)
         
-        #skybox and distance of the skybox
-        #scn_mgr.setSkyBox(True,"Skyes/Night1",100)
-        scn_mgr.setSkyDome(True,"Skyes/Night1",50,5)
-        #scn_mgr.setSkyDome(True,"Examples/SpaceSkyPlane",5,8)
-
-       
-        #lets set a fog
-        #Fadecolor=Ogre.ColourValue(0,0,0)
-        #vp.setBackgroundColour(Fadecolor)
-        #scn_mgr.setFog(Ogre.Ogre.FOG_LINEAR,Fadecolor,0,600,900)
-        
-        
         #Creamos el mapa
         #mapa=Ogretmxmap.tmxmap("Maps/cathedral.tmx")
         mapa=Ogretmxmap.tmxmap("resources/tiled/cathedral.tmx")
@@ -163,19 +150,10 @@ class Game(OgreBites.ApplicationContext, OgreBites.InputListener):
         self.cam.setAspectRatio((vp.getActualWidth()) / (vp.getActualHeight()))
         self.camNode=camNode
 
-        #lens flare
-       #self.lensflare = Lensflare.LensFlare(Ogre.Vector3(0,10,10),self.cam,self.camNode, scn_mgr)
-
         # Setup the scene
         #night light
-        scn_mgr.setAmbientLight(Ogre.ColourValue(.1, .1, .1))
-        
-        dirlight=scn_mgr.createLight("MoonLight1")
-        dirlight.setType(Ogre.Light.LT_DIRECTIONAL);
-        dirlight.setDiffuseColour(Ogre.ColourValue(0, .1, .7));
-        dirlight.setSpecularColour(Ogre.ColourValue(0, 0, .5))
-        dirlight.setDirection(-0.5, -0.5, -0.3)
-        
+        self.Sky=Skyefect.NightSky(scn_mgr,Ogre.Vector3(0,1000,10000),self.cam)
+
 #        spotlight=scn_mgr.createLight("MoonLight2")
 #        spotlight.setType(Ogre.Light.LT_SPOTLIGHT);
 #        spotlight.setDiffuseColour(Ogre.ColourValue(.02, .2, .9));
@@ -189,6 +167,7 @@ class Game(OgreBites.ApplicationContext, OgreBites.InputListener):
 #        spotLightNode.attachObject(spotlight)
         #spotlight.setCastShadows(True)
         
+        # Creamos una pointlight sobre el player
         pointLight = scn_mgr.createLight("PointLight")
         pointLight.setType(Ogre.Light.LT_POINT)
         pointLight.setDiffuseColour(1, 1, 1)
@@ -197,11 +176,6 @@ class Game(OgreBites.ApplicationContext, OgreBites.InputListener):
         pointLightNode.attachObject(pointLight)
         pointLightNode.setPosition(0, 1.5, 0)
         pointLight.setAttenuation(100,1,0.045,0.0075)
-        
-        
-        
-        
-        
         
         #Daylight, esta tecnica de sombreado queda mucho mejor
 #        scn_mgr.setShadowTechnique(Ogre.Ogre.SHADOWTYPE_TEXTURE_ADDITIVE)
@@ -226,14 +200,6 @@ class Game(OgreBites.ApplicationContext, OgreBites.InputListener):
         self.imgui_input = OgreBites.ImGuiInputListener()
         self.input_dispatcher = OgreBites.InputListenerChain([self.imgui_input])
         self.addInputListener(self.input_dispatcher)
-        
-#        mBurstSet= scn_mgr.createBillboardSet("burst2")
-#        mBurstSet.setMaterialName("lensflare/burst")
-#        #self.mBurstSet.setCullIndividually(True)
-#        #self.mBurstSet.setQueryFlags(0)
-#        self.mNode  = scn_mgr.getRootSceneNode().createChildSceneNode()
-#        self.mNode.attachObject(mBurstSet)
-#        self.mNode.setPosition(0, 15, 10)
 
     def frameStarted(self, evt):
         OgreBites.ApplicationContext.frameStarted(self, evt)
@@ -243,7 +209,7 @@ class Game(OgreBites.ApplicationContext, OgreBites.InputListener):
 
         self.time=evt.timeSinceLastFrame
         self.Player.actualiza(self.time)
-        #self.lensflare.update()
+        self.Sky.update()
 
         OgreBites.ApplicationContext.frameStarted(self, evt)
 
