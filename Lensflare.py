@@ -8,6 +8,10 @@ class LensFlare:
         self.mHidden=True
         self.createlensflare()
         self.setLightPosition(LightPosition)
+        self.CameraVect = self.mCamera.getDerivedOrientation() * Ogre.Vector3(0, 0, -1)# normalized vector (length 1)
+        self.ray=Ogre.Ray(self.mCamera.getDerivedPosition(),self.CameraVect)
+        self.query=self.mSceneMgr.createRayQuery(self.ray)
+        self.query.getSortByDistance()
     
     def __del__(self):
         self.mNode.detachObject(self.mHaloSet)
@@ -25,10 +29,12 @@ class LensFlare:
         self.mHaloSet.setMaterialName("lensflare/halo")
         self.mHaloSet.setCullIndividually(True)
         self.mHaloSet.setQueryFlags(0)	# They should not be detected by rays.
+        self.mHaloSet.setRenderQueueGroup(Ogre.RENDER_QUEUE_9)
         self.mBurstSet= self.mSceneMgr.createBillboardSet("burst")
         self.mBurstSet.setMaterialName("lensflare/burst")
         self.mBurstSet.setCullIndividually(True)
         self.mBurstSet.setQueryFlags(0)
+        self.mBurstSet.setRenderQueueGroup(Ogre.RENDER_QUEUE_9)
         
         #The node is located at the light source.
         self.mNode  = self.mSceneMgr.getRootSceneNode().createChildSceneNode()
@@ -66,16 +72,28 @@ class LensFlare:
              self.mBurstSet.setVisible(False)
              return
         else:
+             self.CameraVect = self.mCamera.getDerivedOrientation() * Ogre.Vector3(0, 0, -1)# normalized vector (length 1)
+             self.ray=Ogre.Ray(self.mCamera.getDerivedPosition(),self.CameraVect)
+             self.query.setRay(self.ray)
+             if len(self.query.execute())>1:
+                 self.mHaloSet.setVisible(False);
+                 self.mBurstSet.setVisible(False)
+                 return
              self.mHaloSet.setVisible(True)
              self.mBurstSet.setVisible(True)
+             
         self.LightDistance  = self.mLightPosition.distance(self.mCamera.getDerivedPosition())
         #self.CameraVect  = self.mCamera.getDirection() # normalized vector (length 1)
         #self.CameraVect = self.mCamera.getPosition() + (self.LightDistance * self.CameraVect)
         
         #self.LightDistance  = self.mLightPosition.distance(self.camnode.getDerivedPosition())
-        self.CameraVect = self.mCamera.getDerivedOrientation() * Ogre.Vector3(0, 0, -1)# normalized vector (length 1)
+        
+        #self.mSceneMgr.destroyQuery(query)
+        
         self.CameraVect = self.mCamera.getDerivedPosition() + ( self.CameraVect *self.LightDistance)                
 
+
+        
         #The LensFlare effect takes place along this vector.
         self.LFvect = (self.CameraVect - self.mLightPosition)
         self.LFvect += Ogre.Vector3(-64,-64,0)  # sprite dimension (to be adjusted, but not necessary)

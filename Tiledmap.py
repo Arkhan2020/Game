@@ -97,6 +97,7 @@ class Game(OgreBites.ApplicationContext, OgreBites.InputListener):
 
         #Inicializamos ogre u hacemos un puntero a Root
         root = self.getRoot()
+        #self.getRoot().getRenderSystem().clearFrameBuffer(1.0)
 
         #Creamos el scene manager
         scn_mgr = root.createSceneManager()
