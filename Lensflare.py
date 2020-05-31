@@ -8,8 +8,8 @@ class LensFlare:
         self.mHidden=True
         self.createlensflare()
         self.setLightPosition(LightPosition)
-        self.CameraVect = self.mCamera.getDerivedOrientation() * Ogre.Vector3(0, 0, -1)# normalized vector (length 1)
-        self.ray=Ogre.Ray(self.mCamera.getDerivedPosition(),self.CameraVect)
+        self.raydir=self.mLightPosition-self.mCamera.getDerivedPosition()
+        self.ray=Ogre.Ray(self.mCamera.getDerivedPosition(),self.raydir)
         self.query=self.mSceneMgr.createRayQuery(self.ray)
         self.query.getSortByDistance()
     
@@ -72,9 +72,10 @@ class LensFlare:
              self.mBurstSet.setVisible(False)
              return
         else:
-             self.CameraVect = self.mCamera.getDerivedOrientation() * Ogre.Vector3(0, 0, -1)# normalized vector (length 1)
-             self.ray=Ogre.Ray(self.mCamera.getDerivedPosition(),self.CameraVect)
+             self.raydir=self.mLightPosition-self.mCamera.getDerivedPosition()
+             self.ray=Ogre.Ray(self.mCamera.getDerivedPosition(),self.raydir)
              self.query.setRay(self.ray)
+             self.query.clearResults()
              if len(self.query.execute())>1:
                  self.mHaloSet.setVisible(False);
                  self.mBurstSet.setVisible(False)
@@ -89,7 +90,7 @@ class LensFlare:
         #self.LightDistance  = self.mLightPosition.distance(self.camnode.getDerivedPosition())
         
         #self.mSceneMgr.destroyQuery(query)
-        
+        self.CameraVect = self.mCamera.getDerivedOrientation() * Ogre.Vector3(0, 0, -1)# normalized vector (length 1)
         self.CameraVect = self.mCamera.getDerivedPosition() + ( self.CameraVect *self.LightDistance)                
 
 
