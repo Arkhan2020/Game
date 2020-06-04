@@ -77,13 +77,36 @@ def landing2(objeto,x,y):
 def landing3(objeto,x,y):
     return 1.5
 
-def spiralstair1_NE(objeto,x,y):
-    print ("espiralN")
-    if y==0:
+def hescalon(tan):
+    if tan<0.5:
         return 0
-    if x==0:
-        return 0.667
-    return (y/x)*0.333
+    elif tan<1: 
+        return 0.22
+    elif tan<2:
+        return 0.44
+    else:
+        return 0.66
+
+def spiralstair1_SA(objeto,x,y): #
+    dx=x-int(x)
+    dy=y-int(y)
+    print ("espiralS",dy,"-",dx,"=",hescalon(dy/dx))
+    return hescalon(dy/dx)
+
+def spiralstair1_EA(objeto,x,y):#
+    dx=x-int(x)
+    dy=y-int(y)
+    return hescalon(((dy)/(1-dx)))
+
+def spiralstair1_NA(objeto,x,y):
+    dx=x-int(x)
+    dy=y-int(y)
+    return hescalon((1-dy)/(1-dx))
+
+def spiralstair1_OA(objeto,x,y):
+    dx=x-int(x)
+    dy=y-int(y)
+    return hescalon((1-dx)/(dy))
 
 
 ROT_DIR={"90":"E","180":"S","270":"O","0":"N"}
@@ -92,7 +115,7 @@ COLISION_TYPE = {"NP":solid,"":nocollision,
                  "E2N":stair2_N,"E2S":stair2_S,"E2E":stair2_E,"E2O":stair2_O,
                  "E3N":stair3_N,"E3S":stair3_S,"E3E":stair3_E,"E3O":stair3_O,
                  "E4N":stair4_N,"E4S":stair4_S,"E4E":stair4_E,"E4O":stair4_O,
-                 "SS1":spiralstair1_NE,"SS1E":spiralstair1_NE,
+                 "SS1N":spiralstair1_OA,"SS1E":spiralstair1_SA,"SS1S":spiralstair1_EA,"SS1O":spiralstair1_SA,
                  "L1":landing1, "L2":landing2, "L3":landing3}
 
 class collision_tiles:

@@ -153,7 +153,7 @@ class Game(OgreBites.ApplicationContext, OgreBites.InputListener):
 
         # Setup the scene
         #night light
-        self.Sky=Skyefect.NightSky(scn_mgr,Ogre.Vector3(0,1000,10000),self.cam)
+        self.Sky=Skyefect.NightSky(scn_mgr,Ogre.Vector3(1500,3000,10000),self.cam)
 
 #        spotlight=scn_mgr.createLight("MoonLight2")
 #        spotlight.setType(Ogre.Light.LT_SPOTLIGHT);

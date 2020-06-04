@@ -10,8 +10,8 @@ import Lensflare, Ogre
 class NightSky:
     def __init__(self,scn_mgr,moonpos,cam):
         #skybox and distance of the skybox
-        scn_mgr.setSkyDome(True,"Skyes/Night1",50,5)
-        #scn_mgr.setSkyBox(True,"Skyes/Night1",100)
+        #scn_mgr.setSkyDome(True,"Skyes/Night1",50,5)
+        scn_mgr.setSkyBox(True,"Skyes/NightSkyBox",100)
         #scn_mgr.setSkyDome(True,"Examples/SpaceSkyPlane",5,8)
 
         #lets set a fog
@@ -27,7 +27,8 @@ class NightSky:
         dirlight.setType(Ogre.Light.LT_DIRECTIONAL);
         dirlight.setDiffuseColour(Ogre.ColourValue(0, .1, .7));
         dirlight.setSpecularColour(Ogre.ColourValue(0, 0, .5))
-        dirlight.setDirection(-0.5, -0.5, -0.3)
+        #dirlight.setDirection(-0.5, -0.5, -0.3)
+        dirlight.setDirection(moonpos*-1)
         
         moon= scn_mgr.createBillboardSet("Moon")
         moon.setMaterialName("Skyes/Moon")

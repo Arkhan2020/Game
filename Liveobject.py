@@ -119,7 +119,7 @@ class LiveObject(object):
         if self.mapa.wallsheight(self,pos[0],pos[1],self.z+height,self.OFFSET)>self.z+height:
             return True
             
-        if self.mapa.wallsheight(self,pos[0],pos[1],self.z+0.2,self.OFFSET)-self.z>0.2: #Este es el salto maximo que se puede hacer
+        if self.mapa.wallsheight(self,pos[0],pos[1],self.z+0.2,self.OFFSET)-self.z>0.3: #Este es el salto maximo que se puede hacer
             return True
         else:
             return False
