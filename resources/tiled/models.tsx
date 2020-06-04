@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.2" tiledversion="1.3.3" name="models" tilewidth="128" tileheight="224" tilecount="23" columns="0">
+<tileset version="1.2" tiledversion="1.3.3" name="models" tilewidth="128" tileheight="224" tilecount="27" columns="0">
  <grid orientation="orthogonal" width="1" height="1"/>
  <tile id="1">
   <properties>
@@ -396,6 +396,166 @@
    <property name="Collision" value="NP"/>
   </properties>
   <image source="models/wall_buttress_top_4.iso.png" width="128" height="224"/>
+ </tile>
+ <tile id="185">
+  <properties>
+   <property name="3DModel" value="wall_curved_in.obj"/>
+   <property name="3DMesh" value="wall_curved_in.mesh"/>
+   <property name="Material" value="RockyWall"/>
+   <property name="RotAngle" value="0"/>
+   <property name="Type" value="Model"/>
+  </properties>
+  <image source="models/wall_curved_in_1.iso.png" width="128" height="224"/>
+ </tile>
+ <tile id="186">
+  <properties>
+   <property name="3DModel" value="wall_curved_in.obj"/>
+   <property name="3DMesh" value="wall_curved_in.mesh"/>
+   <property name="Material" value="RockyWall"/>
+   <property name="RotAngle" value="90"/>
+   <property name="Type" value="Model"/>
+  </properties>
+  <image source="models/wall_curved_in_2.iso.png" width="128" height="224"/>
+ </tile>
+ <tile id="187">
+  <properties>
+   <property name="3DModel" value="wall_curved_in.obj"/>
+   <property name="3DMesh" value="wall_curved_in.mesh"/>
+   <property name="Material" value="RockyWall"/>
+   <property name="RotAngle" value="180"/>
+   <property name="Type" value="Model"/>
+  </properties>
+  <image source="models/wall_curved_in_3.iso.png" width="128" height="224"/>
+ </tile>
+ <tile id="188">
+  <properties>
+   <property name="3DModel" value="wall_curved_in.obj"/>
+   <property name="3DMesh" value="wall_curved_in.mesh"/>
+   <property name="Material" value="RockyWall"/>
+   <property name="RotAngle" value="270"/>
+   <property name="Type" value="Model"/>
+  </properties>
+  <image source="models/wall_curved_in_4.iso.png" width="128" height="224"/>
+ </tile>
+ <tile id="193">
+  <properties>
+   <property name="3DModel" value="wall_curved_big_in.obj"/>
+   <property name="3DMesh" value="wall_curved_big_in.mesh"/>
+   <property name="Material" value="RockyWall"/>
+   <property name="RotAngle" value="0"/>
+   <property name="Type" value="Model"/>
+  </properties>
+  <image source="models/wall_curved_big_in_1.iso.png" width="128" height="224"/>
+ </tile>
+ <tile id="194">
+  <properties>
+   <property name="3DModel" value="wall_curved_big_in.obj"/>
+   <property name="3DMesh" value="wall_curved_big_in.mesh"/>
+   <property name="Material" value="RockyWall"/>
+   <property name="RotAngle" value="90"/>
+   <property name="Type" value="Model"/>
+  </properties>
+  <image source="models/wall_curved_big_in_2.iso.png" width="128" height="224"/>
+ </tile>
+ <tile id="195">
+  <properties>
+   <property name="3DModel" value="wall_curved_big_in.obj"/>
+   <property name="3DMesh" value="wall_curved_big_in.mesh"/>
+   <property name="Material" value="RockyWall"/>
+   <property name="RotAngle" value="180"/>
+   <property name="Type" value="Model"/>
+  </properties>
+  <image source="models/wall_curved_big_in_3.iso.png" width="128" height="224"/>
+ </tile>
+ <tile id="196">
+  <properties>
+   <property name="3DModel" value="wall_curved_big_in.obj"/>
+   <property name="3DMesh" value="wall_curved_big_in.mesh"/>
+   <property name="Material" value="RockyWall"/>
+   <property name="RotAngle" value="270"/>
+   <property name="Type" value="Model"/>
+  </properties>
+  <image source="models/wall_curved_big_in_4.iso.png" width="128" height="224"/>
+ </tile>
+ <tile id="201">
+  <properties>
+   <property name="3DModel" value="wall_curved_big_in_s1.obj"/>
+   <property name="3DMesh" value="wall_curved_big_in_s1.mesh"/>
+   <property name="Material" value="RockyWall"/>
+   <property name="RotAngle" value="0"/>
+   <property name="Type" value="Model"/>
+  </properties>
+  <image source="models/wall_curved_big_in_s1_1.iso.png" width="128" height="224"/>
+ </tile>
+ <tile id="202">
+  <properties>
+   <property name="3DModel" value="wall_curved_big_in_s1.obj"/>
+   <property name="3DMesh" value="wall_curved_big_in_s1.mesh"/>
+   <property name="Material" value="RockyWall"/>
+   <property name="RotAngle" value="90"/>
+   <property name="Type" value="Model"/>
+  </properties>
+  <image source="models/wall_curved_big_in_s1_2.iso.png" width="128" height="224"/>
+ </tile>
+ <tile id="203">
+  <properties>
+   <property name="3DModel" value="wall_curved_big_in_s1.obj"/>
+   <property name="3DMesh" value="wall_curved_big_in_s1.mesh"/>
+   <property name="Material" value="RockyWall"/>
+   <property name="RotAngle" value="180"/>
+   <property name="Type" value="Model"/>
+  </properties>
+  <image source="models/wall_curved_big_in_s1_3.iso.png" width="128" height="224"/>
+ </tile>
+ <tile id="204">
+  <properties>
+   <property name="3DModel" value="wall_curved_big_in_s1.obj"/>
+   <property name="3DMesh" value="wall_curved_big_in_s1.mesh"/>
+   <property name="Material" value="RockyWall"/>
+   <property name="RotAngle" value="270"/>
+   <property name="Type" value="Model"/>
+  </properties>
+  <image source="models/wall_curved_big_in_s1_4.iso.png" width="128" height="224"/>
+ </tile>
+ <tile id="209">
+  <properties>
+   <property name="3DModel" value="wall_curved_big_in_s2.obj"/>
+   <property name="3DMesh" value="wall_curved_big_in_s2.mesh"/>
+   <property name="Material" value="RockyWall"/>
+   <property name="RotAngle" value="0"/>
+   <property name="Type" value="Model"/>
+  </properties>
+  <image source="models/wall_curved_big_in_s2_1.iso.png" width="128" height="224"/>
+ </tile>
+ <tile id="210">
+  <properties>
+   <property name="3DModel" value="wall_curved_big_in_s2.obj"/>
+   <property name="3DMesh" value="wall_curved_big_in_s2.mesh"/>
+   <property name="Material" value="RockyWall"/>
+   <property name="RotAngle" value="90"/>
+   <property name="Type" value="Model"/>
+  </properties>
+  <image source="models/wall_curved_big_in_s2_2.iso.png" width="128" height="224"/>
+ </tile>
+ <tile id="211">
+  <properties>
+   <property name="3DModel" value="wall_curved_big_in_s2.obj"/>
+   <property name="3DMesh" value="wall_curved_big_in_s2.mesh"/>
+   <property name="Material" value="RockyWall"/>
+   <property name="RotAngle" value="180"/>
+   <property name="Type" value="Model"/>
+  </properties>
+  <image source="models/wall_curved_big_in_s2_3.iso.png" width="128" height="224"/>
+ </tile>
+ <tile id="212">
+  <properties>
+   <property name="3DModel" value="wall_curved_big_in_s2.obj"/>
+   <property name="3DMesh" value="wall_curved_big_in_s2.mesh"/>
+   <property name="Material" value="RockyWall"/>
+   <property name="RotAngle" value="270"/>
+   <property name="Type" value="Model"/>
+  </properties>
+  <image source="models/wall_curved_big_in_s2_4.iso.png" width="128" height="224"/>
  </tile>
  <tile id="17">
   <properties>
