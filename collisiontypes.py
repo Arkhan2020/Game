@@ -101,6 +101,7 @@ def spiralstair1_EA(objeto,x,y):#
 def spiralstair1_NA(objeto,x,y):
     dx=x-int(x)
     dy=y-int(y)
+    print ("espiralN",dy,"-",dx,"=",hescalon((1-dy)/(1-dx)))
     return hescalon((1-dy)/(1-dx))
 
 def spiralstair1_OA(objeto,x,y):
@@ -115,7 +116,7 @@ COLISION_TYPE = {"NP":solid,"":nocollision,
                  "E2N":stair2_N,"E2S":stair2_S,"E2E":stair2_E,"E2O":stair2_O,
                  "E3N":stair3_N,"E3S":stair3_S,"E3E":stair3_E,"E3O":stair3_O,
                  "E4N":stair4_N,"E4S":stair4_S,"E4E":stair4_E,"E4O":stair4_O,
-                 "SS1N":spiralstair1_OA,"SS1E":spiralstair1_SA,"SS1S":spiralstair1_EA,"SS1O":spiralstair1_SA,
+                 "SS1N":spiralstair1_NA,"SS1E":spiralstair1_SA,"SS1S":spiralstair1_EA,"SS1O":spiralstair1_SA,
                  "L1":landing1, "L2":landing2, "L3":landing3}
 
 class collision_tiles:
@@ -129,7 +130,7 @@ class collision_tiles:
                 if colprop in COLISION_TYPE:
                     self.collisiontypes[gid]=COLISION_TYPE[colprop]
                 else:
-                    colprop=tilelist[gid].properties["Collision"] + ROT_DIR[tilelist[gid].properties["RotAngle"]]
+                    colprop=tilelist[gid].properties["Collision"] + ROT_DIR[tilelist[gid].properties["RefAngle"]]
                     if colprop in COLISION_TYPE:
                         self.collisiontypes[gid]=COLISION_TYPE[colprop]
                     else:

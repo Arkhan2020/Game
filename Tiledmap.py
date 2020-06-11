@@ -254,6 +254,9 @@ class Game(OgreBites.ApplicationContext, OgreBites.InputListener):
                 self.Player.keyright=True
             if evt.keysym.sym == OgreBites.SDLK_SPACE:
                 self.Player.jump()
+            
+            if evt.keysym.sym == OgreBites.SDLK_RETURN:
+                self.Sky.lensflare.drawray()
 
 
             if evt.keysym.sym == OgreBites.SDLK_PAGEDOWN:

@@ -1,5 +1,22 @@
 import Ogre
 
+
+def drawline(scnmgr,ini,fin):
+    line=scnmgr.createManualObject("line")
+    # we can update object later
+    line.setDynamic(True)
+    line.begin("BaseWhiteNoLighting", Ogre.RenderOperation.OT_LINE_STRIP )
+    line.position(ini)
+    line.position(fin)
+    line.end()
+    return line
+
+def updateline(line,ini,fin):
+    line.beginUpdate(0)
+    line.position(ini)
+    line.position(fin)
+    line.end()
+
 class LensFlare:
 
     def __init__(self,LightPosition,camera,SceneMgr):
@@ -21,7 +38,9 @@ class LensFlare:
 
     def createlensflare(self):
         self.LF_scale = 2000;
- 
+        
+        self.line=None
+    
      	# -----------------------------------------------------
         # We create 2 sets of billboards for the lensflare
         # -----------------------------------------------------
@@ -65,6 +84,14 @@ class LensFlare:
          #
          #-------------------------------------------------------------------------- */
  
+    def drawray(self):
+        if self.line==None:
+            linenode=self.mSceneMgr.getRootSceneNode().createChildSceneNode()
+            self.line=drawline(self.mSceneMgr,self.mLightPosition,self.mCamerapos)    
+            linenode.attachObject(self.line)
+        else:
+            updateline(self.line,self.mLightPosition,self.mCamerapos)
+    
     def update(self):
          #If the Light is out of the Camera field Of View, the lensflare is hidden.
         if (not self.mCamera.isVisible(self.mLightPosition)):
@@ -72,18 +99,24 @@ class LensFlare:
              self.mBurstSet.setVisible(False)
              return
         else:
-             self.raydir=self.mLightPosition-self.mCamera.getDerivedPosition()
-             self.ray=Ogre.Ray(self.mCamera.getDerivedPosition(),self.raydir)
+             self.mCamerapos=self.mCamera.getDerivedPosition()
+             self.raydir=self.mLightPosition-self.mCamerapos
+             #self.raydir.normalise()
+             #updateline(self.line,self.mLightPosition,self.mCamerapos)
+             self.ray=Ogre.Ray(self.mCamerapos,self.raydir)
              self.query.setRay(self.ray)
-             self.query.clearResults()
+             #self.query.clearResults()
              if len(self.query.execute())>1:
+                 #print (self.query.getLastResults()[0].movable.getName())
+                 #self.query.getLastResults()[0].movable.setVisible(False)
+                 #self.query.getLastResults()[0].movable.getParentSceneNode().showBoundingBox(True) 
                  self.mHaloSet.setVisible(False);
                  self.mBurstSet.setVisible(False)
                  return
              self.mHaloSet.setVisible(True)
              self.mBurstSet.setVisible(True)
              
-        self.LightDistance  = self.mLightPosition.distance(self.mCamera.getDerivedPosition())
+        self.LightDistance  = self.mLightPosition.distance(self.mCamerapos)
         #self.CameraVect  = self.mCamera.getDirection() # normalized vector (length 1)
         #self.CameraVect = self.mCamera.getPosition() + (self.LightDistance * self.CameraVect)
         
@@ -91,7 +124,7 @@ class LensFlare:
         
         #self.mSceneMgr.destroyQuery(query)
         self.CameraVect = self.mCamera.getDerivedOrientation() * Ogre.Vector3(0, 0, -1)# normalized vector (length 1)
-        self.CameraVect = self.mCamera.getDerivedPosition() + ( self.CameraVect *self.LightDistance)                
+        self.CameraVect = self.mCamerapos + ( self.CameraVect *self.LightDistance)                
 
 
         
