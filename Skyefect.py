@@ -19,8 +19,6 @@ class NightSky:
         #vp.setBackgroundColour(Fadecolor)
         #scn_mgr.setFog(Ogre.Ogre.FOG_LINEAR,Fadecolor,0,600,900)
 
-        #lens flare
-        self.lensflare = Lensflare.LensFlare(moonpos,cam, scn_mgr)
         scn_mgr.setAmbientLight(Ogre.ColourValue(.1, .1, .1))
         
         dirlight=scn_mgr.createLight("MoonLight1")
@@ -41,8 +39,9 @@ class NightSky:
 
         moonNode.attachObject(moon)
         moonNode.setPosition(0, 1, 1)
+        #lens flare
+        self.lensflare = Lensflare.LensFlare(moonpos,cam, scn_mgr)
     
     def update(self):
         self.lensflare.update()
-        pass
         

@@ -7,6 +7,7 @@
    <property name="3DMesh" value="SolidBlock.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="0"/>
+   <property name="RefAngle" value="0"/>
    <property name="Collision" value="NP"/>
   </properties>
   <image source="stairs/SolidBlock_1.iso.png" width="128" height="224"/>
@@ -17,6 +18,7 @@
    <property name="3DMesh" value="SolidBlock.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="90"/>
+   <property name="RefAngle" value="90"/>
    <property name="Collision" value="NP"/>
   </properties>
   <image source="stairs/SolidBlock_2.iso.png" width="128" height="224"/>
@@ -27,6 +29,7 @@
    <property name="3DMesh" value="SolidBlock.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="180"/>
+   <property name="RefAngle" value="180"/>
    <property name="Collision" value="NP"/>
   </properties>
   <image source="stairs/SolidBlock_3.iso.png" width="128" height="224"/>
@@ -37,6 +40,7 @@
    <property name="3DMesh" value="SolidBlock.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="270"/>
+   <property name="RefAngle" value="270"/>
    <property name="Collision" value="NP"/>
   </properties>
   <image source="stairs/SolidBlock_4.iso.png" width="128" height="224"/>
@@ -47,6 +51,8 @@
    <property name="3DMesh" value="G_SpiralStairsR1mB.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="0"/>
+   <property name="RefAngle" value="90"/>
+   <property name="Collision" value="SS2"/>
   </properties>
   <image source="stairs/G_SpiralStairsR1mB_1.iso.png" width="128" height="224"/>
  </tile>
@@ -56,6 +62,8 @@
    <property name="3DMesh" value="G_SpiralStairsR1mB.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="90"/>
+   <property name="RefAngle" value="180"/>
+   <property name="Collision" value="SS2"/>
   </properties>
   <image source="stairs/G_SpiralStairsR1mB_2.iso.png" width="128" height="224"/>
  </tile>
@@ -65,6 +73,8 @@
    <property name="3DMesh" value="G_SpiralStairsR1mB.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="180"/>
+   <property name="RefAngle" value="270"/>
+   <property name="Collision" value="SS2"/>
   </properties>
   <image source="stairs/G_SpiralStairsR1mB_3.iso.png" width="128" height="224"/>
  </tile>
@@ -74,6 +84,8 @@
    <property name="3DMesh" value="G_SpiralStairsR1mB.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="270"/>
+   <property name="RefAngle" value="0"/>
+   <property name="Collision" value="SS2"/>
   </properties>
   <image source="stairs/G_SpiralStairsR1mB_4.iso.png" width="128" height="224"/>
  </tile>
@@ -83,6 +95,8 @@
    <property name="3DMesh" value="G_SpiralStairsR1mC.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="0"/>
+   <property name="RefAngle" value="180"/>
+   <property name="Collision" value="SS3"/>
   </properties>
   <image source="stairs/G_SpiralStairsR1mC_1.iso.png" width="128" height="224"/>
  </tile>
@@ -92,6 +106,8 @@
    <property name="3DMesh" value="G_SpiralStairsR1mC.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="90"/>
+   <property name="RefAngle" value="270"/>
+   <property name="Collision" value="SS3"/>
   </properties>
   <image source="stairs/G_SpiralStairsR1mC_2.iso.png" width="128" height="224"/>
  </tile>
@@ -101,6 +117,8 @@
    <property name="3DMesh" value="G_SpiralStairsR1mC.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="180"/>
+   <property name="RefAngle" value="0"/>
+   <property name="Collision" value="SS3"/>
   </properties>
   <image source="stairs/G_SpiralStairsR1mC_3.iso.png" width="128" height="224"/>
  </tile>
@@ -110,6 +128,8 @@
    <property name="3DMesh" value="G_SpiralStairsR1mC.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="270"/>
+   <property name="RefAngle" value="90"/>
+   <property name="Collision" value="SS3"/>
   </properties>
   <image source="stairs/G_SpiralStairsR1mC_4.iso.png" width="128" height="224"/>
  </tile>
@@ -119,6 +139,7 @@
    <property name="3DMesh" value="F_SpiralStairsR1mA.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="0"/>
+   <property name="RefAngle" value="0"/>
    <property name="Collision" value="SS1"/>
   </properties>
   <image source="stairs/F_SpiralStairsR1mA_1.iso.png" width="128" height="224"/>
@@ -129,6 +150,7 @@
    <property name="3DMesh" value="F_SpiralStairsR1mA.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="90"/>
+   <property name="RefAngle" value="90"/>
    <property name="Collision" value="SS1"/>
   </properties>
   <image source="stairs/F_SpiralStairsR1mA_2.iso.png" width="128" height="224"/>
@@ -139,6 +161,7 @@
    <property name="3DMesh" value="F_SpiralStairsR1mA.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="180"/>
+   <property name="RefAngle" value="180"/>
    <property name="Collision" value="SS1"/>
   </properties>
   <image source="stairs/F_SpiralStairsR1mA_3.iso.png" width="128" height="224"/>
@@ -149,6 +172,7 @@
    <property name="3DMesh" value="F_SpiralStairsR1mA.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="270"/>
+   <property name="RefAngle" value="270"/>
    <property name="Collision" value="SS1"/>
   </properties>
   <image source="stairs/F_SpiralStairsR1mA_4.iso.png" width="128" height="224"/>
@@ -159,6 +183,8 @@
    <property name="3DMesh" value="F_SpiralStairsR1mB.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="0"/>
+   <property name="RefAngle" value="90"/>
+   <property name="Collision" value="SS2"/>
   </properties>
   <image source="stairs/F_SpiralStairsR1mB_1.iso.png" width="128" height="224"/>
  </tile>
@@ -168,6 +194,8 @@
    <property name="3DMesh" value="F_SpiralStairsR1mB.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="90"/>
+   <property name="RefAngle" value="180"/>
+   <property name="Collision" value="SS2"/>
   </properties>
   <image source="stairs/F_SpiralStairsR1mB_2.iso.png" width="128" height="224"/>
  </tile>
@@ -177,6 +205,8 @@
    <property name="3DMesh" value="F_SpiralStairsR1mB.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="180"/>
+   <property name="RefAngle" value="270"/>
+   <property name="Collision" value="SS2"/>
   </properties>
   <image source="stairs/F_SpiralStairsR1mB_3.iso.png" width="128" height="224"/>
  </tile>
@@ -186,6 +216,8 @@
    <property name="3DMesh" value="F_SpiralStairsR1mB.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="270"/>
+   <property name="RefAngle" value="0"/>
+   <property name="Collision" value="SS2"/>
   </properties>
   <image source="stairs/F_SpiralStairsR1mB_4.iso.png" width="128" height="224"/>
  </tile>
@@ -195,6 +227,8 @@
    <property name="3DMesh" value="F_SpiralStairsR1mC.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="0"/>
+   <property name="RefAngle" value="180"/>
+   <property name="Collision" value="SS3"/>
   </properties>
   <image source="stairs/F_SpiralStairsR1mC_1.iso.png" width="128" height="224"/>
  </tile>
@@ -204,6 +238,8 @@
    <property name="3DMesh" value="F_SpiralStairsR1mC.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="90"/>
+   <property name="RefAngle" value="270"/>
+   <property name="Collision" value="SS3"/>
   </properties>
   <image source="stairs/F_SpiralStairsR1mC_2.iso.png" width="128" height="224"/>
  </tile>
@@ -213,6 +249,8 @@
    <property name="3DMesh" value="F_SpiralStairsR1mC.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="180"/>
+   <property name="RefAngle" value="0"/>
+   <property name="Collision" value="SS3"/>
   </properties>
   <image source="stairs/F_SpiralStairsR1mC_3.iso.png" width="128" height="224"/>
  </tile>
@@ -222,6 +260,8 @@
    <property name="3DMesh" value="F_SpiralStairsR1mC.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="270"/>
+   <property name="RefAngle" value="90"/>
+   <property name="Collision" value="SS3"/>
   </properties>
   <image source="stairs/F_SpiralStairsR1mC_4.iso.png" width="128" height="224"/>
  </tile>
@@ -231,6 +271,8 @@
    <property name="3DMesh" value="F_SpiralStairsR1mD.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="0"/>
+   <property name="RefAngle" value="270"/>
+   <property name="Collision" value="SS4"/>
   </properties>
   <image source="stairs/F_SpiralStairsR1mD_1.iso.png" width="128" height="224"/>
  </tile>
@@ -240,6 +282,8 @@
    <property name="3DMesh" value="F_SpiralStairsR1mD.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="90"/>
+   <property name="RefAngle" value="0"/>
+   <property name="Collision" value="SS4"/>
   </properties>
   <image source="stairs/F_SpiralStairsR1mD_2.iso.png" width="128" height="224"/>
  </tile>
@@ -249,6 +293,8 @@
    <property name="3DMesh" value="F_SpiralStairsR1mD.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="180"/>
+   <property name="RefAngle" value="90"/>
+   <property name="Collision" value="SS4"/>
   </properties>
   <image source="stairs/F_SpiralStairsR1mD_3.iso.png" width="128" height="224"/>
  </tile>
@@ -258,6 +304,8 @@
    <property name="3DMesh" value="F_SpiralStairsR1mD.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="270"/>
+   <property name="RefAngle" value="180"/>
+   <property name="Collision" value="SS4"/>
   </properties>
   <image source="stairs/F_SpiralStairsR1mD_4.iso.png" width="128" height="224"/>
  </tile>
@@ -267,7 +315,7 @@
    <property name="3DMesh" value="SpiralStairsWallR1mA.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="0"/>
-   <property name="Collision" value="SS1"/>
+   <property name="RefAngle" value="0"/>
   </properties>
   <image source="stairs/SpiralStairsWallR1mA_1.iso.png" width="128" height="224"/>
  </tile>
@@ -277,7 +325,7 @@
    <property name="3DMesh" value="SpiralStairsWallR1mA.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="90"/>
-   <property name="Collision" value="SS1"/>
+   <property name="RefAngle" value="90"/>
   </properties>
   <image source="stairs/SpiralStairsWallR1mA_2.iso.png" width="128" height="224"/>
  </tile>
@@ -287,7 +335,7 @@
    <property name="3DMesh" value="SpiralStairsWallR1mA.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="180"/>
-   <property name="Collision" value="SS1"/>
+   <property name="RefAngle" value="180"/>
   </properties>
   <image source="stairs/SpiralStairsWallR1mA_3.iso.png" width="128" height="224"/>
  </tile>
@@ -297,7 +345,7 @@
    <property name="3DMesh" value="SpiralStairsWallR1mA.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="270"/>
-   <property name="Collision" value="SS1"/>
+   <property name="RefAngle" value="270"/>
   </properties>
   <image source="stairs/SpiralStairsWallR1mA_4.iso.png" width="128" height="224"/>
  </tile>
@@ -307,6 +355,7 @@
    <property name="3DMesh" value="SpiralStairsWallR1mB.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="0"/>
+   <property name="RefAngle" value="0"/>
   </properties>
   <image source="stairs/SpiralStairsWallR1mB_1.iso.png" width="128" height="224"/>
  </tile>
@@ -316,6 +365,7 @@
    <property name="3DMesh" value="SpiralStairsWallR1mB.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="90"/>
+   <property name="RefAngle" value="90"/>
   </properties>
   <image source="stairs/SpiralStairsWallR1mB_2.iso.png" width="128" height="224"/>
  </tile>
@@ -325,6 +375,7 @@
    <property name="3DMesh" value="SpiralStairsWallR1mB.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="180"/>
+   <property name="RefAngle" value="180"/>
   </properties>
   <image source="stairs/SpiralStairsWallR1mB_3.iso.png" width="128" height="224"/>
  </tile>
@@ -334,6 +385,7 @@
    <property name="3DMesh" value="SpiralStairsWallR1mB.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="270"/>
+   <property name="RefAngle" value="270"/>
   </properties>
   <image source="stairs/SpiralStairsWallR1mB_4.iso.png" width="128" height="224"/>
  </tile>
@@ -343,6 +395,7 @@
    <property name="3DMesh" value="SpiralStairsWallR1mC.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="0"/>
+   <property name="RefAngle" value="0"/>
   </properties>
   <image source="stairs/SpiralStairsWallR1mC_1.iso.png" width="128" height="224"/>
  </tile>
@@ -352,6 +405,7 @@
    <property name="3DMesh" value="SpiralStairsWallR1mC.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="90"/>
+   <property name="RefAngle" value="90"/>
   </properties>
   <image source="stairs/SpiralStairsWallR1mC_2.iso.png" width="128" height="224"/>
  </tile>
@@ -361,6 +415,7 @@
    <property name="3DMesh" value="SpiralStairsWallR1mC.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="180"/>
+   <property name="RefAngle" value="180"/>
   </properties>
   <image source="stairs/SpiralStairsWallR1mC_3.iso.png" width="128" height="224"/>
  </tile>
@@ -370,6 +425,7 @@
    <property name="3DMesh" value="SpiralStairsWallR1mC.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="270"/>
+   <property name="RefAngle" value="270"/>
   </properties>
   <image source="stairs/SpiralStairsWallR1mC_4.iso.png" width="128" height="224"/>
  </tile>
@@ -379,6 +435,7 @@
    <property name="3DMesh" value="SpiralStairsWallR1mD.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="0"/>
+   <property name="RefAngle" value="0"/>
   </properties>
   <image source="stairs/SpiralStairsWallR1mD_1.iso.png" width="128" height="224"/>
  </tile>
@@ -388,6 +445,7 @@
    <property name="3DMesh" value="SpiralStairsWallR1mD.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="90"/>
+   <property name="RefAngle" value="90"/>
   </properties>
   <image source="stairs/SpiralStairsWallR1mD_2.iso.png" width="128" height="224"/>
  </tile>
@@ -397,6 +455,7 @@
    <property name="3DMesh" value="SpiralStairsWallR1mD.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="180"/>
+   <property name="RefAngle" value="180"/>
   </properties>
   <image source="stairs/SpiralStairsWallR1mD_3.iso.png" width="128" height="224"/>
  </tile>
@@ -406,6 +465,7 @@
    <property name="3DMesh" value="SpiralStairsWallR1mD.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="270"/>
+   <property name="RefAngle" value="270"/>
   </properties>
   <image source="stairs/SpiralStairsWallR1mD_4.iso.png" width="128" height="224"/>
  </tile>
@@ -415,6 +475,7 @@
    <property name="3DMesh" value="G_StraightStairsA.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="0"/>
+   <property name="RefAngle" value="90"/>
    <property name="Collision" value="SS1"/>
   </properties>
   <image source="stairs/G_StraightStairsA_1.iso.png" width="128" height="224"/>
@@ -425,6 +486,7 @@
    <property name="3DMesh" value="G_StraightStairsA.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="90"/>
+   <property name="RefAngle" value="180"/>
    <property name="Collision" value="SS1"/>
   </properties>
   <image source="stairs/G_StraightStairsA_2.iso.png" width="128" height="224"/>
@@ -435,6 +497,7 @@
    <property name="3DMesh" value="G_StraightStairsA.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="180"/>
+   <property name="RefAngle" value="270"/>
    <property name="Collision" value="SS1"/>
   </properties>
   <image source="stairs/G_StraightStairsA_3.iso.png" width="128" height="224"/>
@@ -445,6 +508,7 @@
    <property name="3DMesh" value="G_StraightStairsA.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="270"/>
+   <property name="RefAngle" value="0"/>
    <property name="Collision" value="SS1"/>
   </properties>
   <image source="stairs/G_StraightStairsA_4.iso.png" width="128" height="224"/>
@@ -455,6 +519,7 @@
    <property name="3DMesh" value="WG_SpiralStairsR1mA.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="0"/>
+   <property name="RefAngle" value="0"/>
    <property name="Collision" value="SS1"/>
   </properties>
   <image source="stairs/WG_SpiralStairsR1mA_1.iso.png" width="128" height="224"/>
@@ -465,6 +530,7 @@
    <property name="3DMesh" value="WG_SpiralStairsR1mA.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="90"/>
+   <property name="RefAngle" value="90"/>
    <property name="Collision" value="SS1"/>
   </properties>
   <image source="stairs/WG_SpiralStairsR1mA_2.iso.png" width="128" height="224"/>
@@ -475,6 +541,7 @@
    <property name="3DMesh" value="WG_SpiralStairsR1mA.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="180"/>
+   <property name="RefAngle" value="180"/>
    <property name="Collision" value="SS1"/>
   </properties>
   <image source="stairs/WG_SpiralStairsR1mA_3.iso.png" width="128" height="224"/>
@@ -485,6 +552,7 @@
    <property name="3DMesh" value="WG_SpiralStairsR1mA.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="270"/>
+   <property name="RefAngle" value="270"/>
    <property name="Collision" value="SS1"/>
   </properties>
   <image source="stairs/WG_SpiralStairsR1mA_4.iso.png" width="128" height="224"/>
@@ -495,6 +563,8 @@
    <property name="3DMesh" value="WG_SpiralStairsR1mB.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="0"/>
+   <property name="RefAngle" value="90"/>
+   <property name="Collision" value="SS2"/>
   </properties>
   <image source="stairs/WG_SpiralStairsR1mB_1.iso.png" width="128" height="224"/>
  </tile>
@@ -504,6 +574,8 @@
    <property name="3DMesh" value="WG_SpiralStairsR1mB.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="90"/>
+   <property name="RefAngle" value="180"/>
+   <property name="Collision" value="SS2"/>
   </properties>
   <image source="stairs/WG_SpiralStairsR1mB_2.iso.png" width="128" height="224"/>
  </tile>
@@ -513,6 +585,8 @@
    <property name="3DMesh" value="WG_SpiralStairsR1mB.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="180"/>
+   <property name="RefAngle" value="270"/>
+   <property name="Collision" value="SS2"/>
   </properties>
   <image source="stairs/WG_SpiralStairsR1mB_3.iso.png" width="128" height="224"/>
  </tile>
@@ -522,6 +596,8 @@
    <property name="3DMesh" value="WG_SpiralStairsR1mB.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="270"/>
+   <property name="RefAngle" value="0"/>
+   <property name="Collision" value="SS2"/>
   </properties>
   <image source="stairs/WG_SpiralStairsR1mB_4.iso.png" width="128" height="224"/>
  </tile>
@@ -531,6 +607,8 @@
    <property name="3DMesh" value="WG_SpiralStairsR1mC.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="0"/>
+   <property name="RefAngle" value="180"/>
+   <property name="Collision" value="SS3"/>
   </properties>
   <image source="stairs/WG_SpiralStairsR1mC_1.iso.png" width="128" height="224"/>
  </tile>
@@ -540,6 +618,8 @@
    <property name="3DMesh" value="WG_SpiralStairsR1mC.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="90"/>
+   <property name="RefAngle" value="270"/>
+   <property name="Collision" value="SS3"/>
   </properties>
   <image source="stairs/WG_SpiralStairsR1mC_2.iso.png" width="128" height="224"/>
  </tile>
@@ -549,6 +629,8 @@
    <property name="3DMesh" value="WG_SpiralStairsR1mC.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="180"/>
+   <property name="RefAngle" value="0"/>
+   <property name="Collision" value="SS3"/>
   </properties>
   <image source="stairs/WG_SpiralStairsR1mC_3.iso.png" width="128" height="224"/>
  </tile>
@@ -558,6 +640,8 @@
    <property name="3DMesh" value="WG_SpiralStairsR1mC.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="270"/>
+   <property name="RefAngle" value="90"/>
+   <property name="Collision" value="SS3"/>
   </properties>
   <image source="stairs/WG_SpiralStairsR1mC_4.iso.png" width="128" height="224"/>
  </tile>
@@ -567,6 +651,7 @@
    <property name="3DMesh" value="WF_SpiralStairsR1mA.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="0"/>
+   <property name="RefAngle" value="0"/>
    <property name="Collision" value="SS1"/>
   </properties>
   <image source="stairs/WF_SpiralStairsR1mA_1.iso.png" width="128" height="224"/>
@@ -577,6 +662,7 @@
    <property name="3DMesh" value="WF_SpiralStairsR1mA.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="90"/>
+   <property name="RefAngle" value="90"/>
    <property name="Collision" value="SS1"/>
   </properties>
   <image source="stairs/WF_SpiralStairsR1mA_2.iso.png" width="128" height="224"/>
@@ -587,6 +673,7 @@
    <property name="3DMesh" value="WF_SpiralStairsR1mA.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="180"/>
+   <property name="RefAngle" value="180"/>
    <property name="Collision" value="SS1"/>
   </properties>
   <image source="stairs/WF_SpiralStairsR1mA_3.iso.png" width="128" height="224"/>
@@ -597,6 +684,7 @@
    <property name="3DMesh" value="WF_SpiralStairsR1mA.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="270"/>
+   <property name="RefAngle" value="270"/>
    <property name="Collision" value="SS1"/>
   </properties>
   <image source="stairs/WF_SpiralStairsR1mA_4.iso.png" width="128" height="224"/>
@@ -607,6 +695,8 @@
    <property name="3DMesh" value="WF_SpiralStairsR1mB.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="0"/>
+   <property name="RefAngle" value="90"/>
+   <property name="Collision" value="SS2"/>
   </properties>
   <image source="stairs/WF_SpiralStairsR1mB_1.iso.png" width="128" height="224"/>
  </tile>
@@ -616,6 +706,8 @@
    <property name="3DMesh" value="WF_SpiralStairsR1mB.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="90"/>
+   <property name="RefAngle" value="180"/>
+   <property name="Collision" value="SS2"/>
   </properties>
   <image source="stairs/WF_SpiralStairsR1mB_2.iso.png" width="128" height="224"/>
  </tile>
@@ -625,6 +717,8 @@
    <property name="3DMesh" value="WF_SpiralStairsR1mB.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="180"/>
+   <property name="RefAngle" value="270"/>
+   <property name="Collision" value="SS2"/>
   </properties>
   <image source="stairs/WF_SpiralStairsR1mB_3.iso.png" width="128" height="224"/>
  </tile>
@@ -634,6 +728,8 @@
    <property name="3DMesh" value="WF_SpiralStairsR1mB.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="270"/>
+   <property name="RefAngle" value="0"/>
+   <property name="Collision" value="SS2"/>
   </properties>
   <image source="stairs/WF_SpiralStairsR1mB_4.iso.png" width="128" height="224"/>
  </tile>
@@ -643,6 +739,8 @@
    <property name="3DMesh" value="WF_SpiralStairsR1mC.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="0"/>
+   <property name="RefAngle" value="180"/>
+   <property name="Collision" value="SS3"/>
   </properties>
   <image source="stairs/WF_SpiralStairsR1mC_1.iso.png" width="128" height="224"/>
  </tile>
@@ -652,6 +750,8 @@
    <property name="3DMesh" value="WF_SpiralStairsR1mC.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="90"/>
+   <property name="RefAngle" value="270"/>
+   <property name="Collision" value="SS3"/>
   </properties>
   <image source="stairs/WF_SpiralStairsR1mC_2.iso.png" width="128" height="224"/>
  </tile>
@@ -661,6 +761,8 @@
    <property name="3DMesh" value="WF_SpiralStairsR1mC.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="180"/>
+   <property name="RefAngle" value="0"/>
+   <property name="Collision" value="SS3"/>
   </properties>
   <image source="stairs/WF_SpiralStairsR1mC_3.iso.png" width="128" height="224"/>
  </tile>
@@ -670,6 +772,8 @@
    <property name="3DMesh" value="WF_SpiralStairsR1mC.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="270"/>
+   <property name="RefAngle" value="90"/>
+   <property name="Collision" value="SS3"/>
   </properties>
   <image source="stairs/WF_SpiralStairsR1mC_4.iso.png" width="128" height="224"/>
  </tile>
@@ -679,6 +783,8 @@
    <property name="3DMesh" value="WF_SpiralStairsR1mD.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="0"/>
+   <property name="RefAngle" value="270"/>
+   <property name="Collision" value="SS4"/>
   </properties>
   <image source="stairs/WF_SpiralStairsR1mD_1.iso.png" width="128" height="224"/>
  </tile>
@@ -688,6 +794,8 @@
    <property name="3DMesh" value="WF_SpiralStairsR1mD.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="90"/>
+   <property name="RefAngle" value="0"/>
+   <property name="Collision" value="SS4"/>
   </properties>
   <image source="stairs/WF_SpiralStairsR1mD_2.iso.png" width="128" height="224"/>
  </tile>
@@ -697,6 +805,8 @@
    <property name="3DMesh" value="WF_SpiralStairsR1mD.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="180"/>
+   <property name="RefAngle" value="90"/>
+   <property name="Collision" value="SS4"/>
   </properties>
   <image source="stairs/WF_SpiralStairsR1mD_3.iso.png" width="128" height="224"/>
  </tile>
@@ -706,6 +816,8 @@
    <property name="3DMesh" value="WF_SpiralStairsR1mD.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="270"/>
+   <property name="RefAngle" value="180"/>
+   <property name="Collision" value="SS4"/>
   </properties>
   <image source="stairs/WF_SpiralStairsR1mD_4.iso.png" width="128" height="224"/>
  </tile>
@@ -715,6 +827,7 @@
    <property name="3DMesh" value="H_SpiralStairsR1mA.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="0"/>
+   <property name="RefAngle" value="0"/>
    <property name="Collision" value="SS1"/>
   </properties>
   <image source="stairs/H_SpiralStairsR1mA_1.iso.png" width="128" height="224"/>
@@ -725,6 +838,7 @@
    <property name="3DMesh" value="H_SpiralStairsR1mA.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="90"/>
+   <property name="RefAngle" value="90"/>
    <property name="Collision" value="SS1"/>
   </properties>
   <image source="stairs/H_SpiralStairsR1mA_2.iso.png" width="128" height="224"/>
@@ -735,6 +849,7 @@
    <property name="3DMesh" value="H_SpiralStairsR1mA.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="180"/>
+   <property name="RefAngle" value="180"/>
    <property name="Collision" value="SS1"/>
   </properties>
   <image source="stairs/H_SpiralStairsR1mA_3.iso.png" width="128" height="224"/>
@@ -745,6 +860,7 @@
    <property name="3DMesh" value="H_SpiralStairsR1mA.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="270"/>
+   <property name="RefAngle" value="270"/>
    <property name="Collision" value="SS1"/>
   </properties>
   <image source="stairs/H_SpiralStairsR1mA_4.iso.png" width="128" height="224"/>
@@ -755,6 +871,8 @@
    <property name="3DMesh" value="H_SpiralStairsR1mB.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="0"/>
+   <property name="RefAngle" value="90"/>
+   <property name="Collision" value="SS2"/>
   </properties>
   <image source="stairs/H_SpiralStairsR1mB_1.iso.png" width="128" height="224"/>
  </tile>
@@ -764,6 +882,8 @@
    <property name="3DMesh" value="H_SpiralStairsR1mB.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="90"/>
+   <property name="RefAngle" value="180"/>
+   <property name="Collision" value="SS2"/>
   </properties>
   <image source="stairs/H_SpiralStairsR1mB_2.iso.png" width="128" height="224"/>
  </tile>
@@ -773,6 +893,8 @@
    <property name="3DMesh" value="H_SpiralStairsR1mB.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="180"/>
+   <property name="RefAngle" value="270"/>
+   <property name="Collision" value="SS2"/>
   </properties>
   <image source="stairs/H_SpiralStairsR1mB_3.iso.png" width="128" height="224"/>
  </tile>
@@ -782,6 +904,8 @@
    <property name="3DMesh" value="H_SpiralStairsR1mB.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="270"/>
+   <property name="RefAngle" value="0"/>
+   <property name="Collision" value="SS2"/>
   </properties>
   <image source="stairs/H_SpiralStairsR1mB_4.iso.png" width="128" height="224"/>
  </tile>
@@ -791,6 +915,8 @@
    <property name="3DMesh" value="H_SpiralStairsR1mC.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="0"/>
+   <property name="RefAngle" value="180"/>
+   <property name="Collision" value="SS3"/>
   </properties>
   <image source="stairs/H_SpiralStairsR1mC_1.iso.png" width="128" height="224"/>
  </tile>
@@ -800,6 +926,8 @@
    <property name="3DMesh" value="H_SpiralStairsR1mC.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="90"/>
+   <property name="RefAngle" value="270"/>
+   <property name="Collision" value="SS3"/>
   </properties>
   <image source="stairs/H_SpiralStairsR1mC_2.iso.png" width="128" height="224"/>
  </tile>
@@ -809,6 +937,8 @@
    <property name="3DMesh" value="H_SpiralStairsR1mC.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="180"/>
+   <property name="RefAngle" value="0"/>
+   <property name="Collision" value="SS3"/>
   </properties>
   <image source="stairs/H_SpiralStairsR1mC_3.iso.png" width="128" height="224"/>
  </tile>
@@ -818,6 +948,8 @@
    <property name="3DMesh" value="H_SpiralStairsR1mC.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="270"/>
+   <property name="RefAngle" value="90"/>
+   <property name="Collision" value="SS3"/>
   </properties>
   <image source="stairs/H_SpiralStairsR1mC_4.iso.png" width="128" height="224"/>
  </tile>
@@ -827,6 +959,8 @@
    <property name="3DMesh" value="G_StraightStairsB.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="0"/>
+   <property name="RefAngle" value="90"/>
+   <property name="Collision" value="SS2"/>
   </properties>
   <image source="stairs/G_StraightStairsB_1.iso.png" width="128" height="224"/>
  </tile>
@@ -836,6 +970,8 @@
    <property name="3DMesh" value="G_StraightStairsB.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="90"/>
+   <property name="RefAngle" value="180"/>
+   <property name="Collision" value="SS2"/>
   </properties>
   <image source="stairs/G_StraightStairsB_2.iso.png" width="128" height="224"/>
  </tile>
@@ -845,6 +981,8 @@
    <property name="3DMesh" value="G_StraightStairsB.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="180"/>
+   <property name="RefAngle" value="270"/>
+   <property name="Collision" value="SS2"/>
   </properties>
   <image source="stairs/G_StraightStairsB_3.iso.png" width="128" height="224"/>
  </tile>
@@ -854,6 +992,8 @@
    <property name="3DMesh" value="G_StraightStairsB.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="270"/>
+   <property name="RefAngle" value="0"/>
+   <property name="Collision" value="SS2"/>
   </properties>
   <image source="stairs/G_StraightStairsB_4.iso.png" width="128" height="224"/>
  </tile>
@@ -863,6 +1003,7 @@
    <property name="3DMesh" value="J_SpiralStairsR1mA.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="0"/>
+   <property name="RefAngle" value="0"/>
    <property name="Collision" value="SS1"/>
   </properties>
   <image source="stairs/J_SpiralStairsR1mA_1.iso.png" width="128" height="224"/>
@@ -873,6 +1014,7 @@
    <property name="3DMesh" value="J_SpiralStairsR1mA.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="90"/>
+   <property name="RefAngle" value="90"/>
    <property name="Collision" value="SS1"/>
   </properties>
   <image source="stairs/J_SpiralStairsR1mA_2.iso.png" width="128" height="224"/>
@@ -883,6 +1025,7 @@
    <property name="3DMesh" value="J_SpiralStairsR1mA.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="180"/>
+   <property name="RefAngle" value="180"/>
    <property name="Collision" value="SS1"/>
   </properties>
   <image source="stairs/J_SpiralStairsR1mA_3.iso.png" width="128" height="224"/>
@@ -893,6 +1036,7 @@
    <property name="3DMesh" value="J_SpiralStairsR1mA.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="270"/>
+   <property name="RefAngle" value="270"/>
    <property name="Collision" value="SS1"/>
   </properties>
   <image source="stairs/J_SpiralStairsR1mA_4.iso.png" width="128" height="224"/>
@@ -903,6 +1047,8 @@
    <property name="3DMesh" value="J_SpiralStairsR1mB.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="0"/>
+   <property name="RefAngle" value="90"/>
+   <property name="Collision" value="SS2"/>
   </properties>
   <image source="stairs/J_SpiralStairsR1mB_1.iso.png" width="128" height="224"/>
  </tile>
@@ -912,6 +1058,8 @@
    <property name="3DMesh" value="J_SpiralStairsR1mB.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="90"/>
+   <property name="RefAngle" value="180"/>
+   <property name="Collision" value="SS2"/>
   </properties>
   <image source="stairs/J_SpiralStairsR1mB_2.iso.png" width="128" height="224"/>
  </tile>
@@ -921,6 +1069,8 @@
    <property name="3DMesh" value="J_SpiralStairsR1mB.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="180"/>
+   <property name="RefAngle" value="270"/>
+   <property name="Collision" value="SS2"/>
   </properties>
   <image source="stairs/J_SpiralStairsR1mB_3.iso.png" width="128" height="224"/>
  </tile>
@@ -930,6 +1080,8 @@
    <property name="3DMesh" value="J_SpiralStairsR1mB.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="270"/>
+   <property name="RefAngle" value="0"/>
+   <property name="Collision" value="SS2"/>
   </properties>
   <image source="stairs/J_SpiralStairsR1mB_4.iso.png" width="128" height="224"/>
  </tile>
@@ -939,6 +1091,8 @@
    <property name="3DMesh" value="J_SpiralStairsR1mC.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="0"/>
+   <property name="RefAngle" value="180"/>
+   <property name="Collision" value="SS3"/>
   </properties>
   <image source="stairs/J_SpiralStairsR1mC_1.iso.png" width="128" height="224"/>
  </tile>
@@ -948,6 +1102,8 @@
    <property name="3DMesh" value="J_SpiralStairsR1mC.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="90"/>
+   <property name="RefAngle" value="270"/>
+   <property name="Collision" value="SS3"/>
   </properties>
   <image source="stairs/J_SpiralStairsR1mC_2.iso.png" width="128" height="224"/>
  </tile>
@@ -957,6 +1113,8 @@
    <property name="3DMesh" value="J_SpiralStairsR1mC.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="180"/>
+   <property name="RefAngle" value="0"/>
+   <property name="Collision" value="SS3"/>
   </properties>
   <image source="stairs/J_SpiralStairsR1mC_3.iso.png" width="128" height="224"/>
  </tile>
@@ -966,6 +1124,8 @@
    <property name="3DMesh" value="J_SpiralStairsR1mC.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="270"/>
+   <property name="RefAngle" value="90"/>
+   <property name="Collision" value="SS3"/>
   </properties>
   <image source="stairs/J_SpiralStairsR1mC_4.iso.png" width="128" height="224"/>
  </tile>
@@ -975,6 +1135,8 @@
    <property name="3DMesh" value="J_SpiralStairsR1mD.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="0"/>
+   <property name="RefAngle" value="270"/>
+   <property name="Collision" value="SS4"/>
   </properties>
   <image source="stairs/J_SpiralStairsR1mD_1.iso.png" width="128" height="224"/>
  </tile>
@@ -984,6 +1146,8 @@
    <property name="3DMesh" value="J_SpiralStairsR1mD.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="90"/>
+   <property name="RefAngle" value="0"/>
+   <property name="Collision" value="SS4"/>
   </properties>
   <image source="stairs/J_SpiralStairsR1mD_2.iso.png" width="128" height="224"/>
  </tile>
@@ -993,6 +1157,8 @@
    <property name="3DMesh" value="J_SpiralStairsR1mD.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="180"/>
+   <property name="RefAngle" value="90"/>
+   <property name="Collision" value="SS4"/>
   </properties>
   <image source="stairs/J_SpiralStairsR1mD_3.iso.png" width="128" height="224"/>
  </tile>
@@ -1002,6 +1168,8 @@
    <property name="3DMesh" value="J_SpiralStairsR1mD.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="270"/>
+   <property name="RefAngle" value="180"/>
+   <property name="Collision" value="SS4"/>
   </properties>
   <image source="stairs/J_SpiralStairsR1mD_4.iso.png" width="128" height="224"/>
  </tile>
@@ -1011,6 +1179,7 @@
    <property name="3DMesh" value="StairLanding1.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="0"/>
+   <property name="RefAngle" value="0"/>
    <property name="Collision" value="L1"/>
   </properties>
   <image source="stairs/StairLanding1_1.iso.png" width="128" height="224"/>
@@ -1021,6 +1190,7 @@
    <property name="3DMesh" value="StairLanding1.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="90"/>
+   <property name="RefAngle" value="90"/>
    <property name="Collision" value="L1"/>
   </properties>
   <image source="stairs/StairLanding1_2.iso.png" width="128" height="224"/>
@@ -1031,6 +1201,7 @@
    <property name="3DMesh" value="StairLanding1.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="180"/>
+   <property name="RefAngle" value="180"/>
    <property name="Collision" value="L1"/>
   </properties>
   <image source="stairs/StairLanding1_3.iso.png" width="128" height="224"/>
@@ -1041,6 +1212,7 @@
    <property name="3DMesh" value="StairLanding1.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="270"/>
+   <property name="RefAngle" value="270"/>
    <property name="Collision" value="L1"/>
   </properties>
   <image source="stairs/StairLanding1_4.iso.png" width="128" height="224"/>
@@ -1051,6 +1223,7 @@
    <property name="3DMesh" value="StairLanding2.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="0"/>
+   <property name="RefAngle" value="0"/>
    <property name="Collision" value="L2"/>
   </properties>
   <image source="stairs/StairLanding2_1.iso.png" width="128" height="224"/>
@@ -1061,6 +1234,7 @@
    <property name="3DMesh" value="StairLanding2.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="90"/>
+   <property name="RefAngle" value="90"/>
    <property name="Collision" value="L2"/>
   </properties>
   <image source="stairs/StairLanding2_2.iso.png" width="128" height="224"/>
@@ -1071,6 +1245,7 @@
    <property name="3DMesh" value="StairLanding2.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="180"/>
+   <property name="RefAngle" value="180"/>
    <property name="Collision" value="L2"/>
   </properties>
   <image source="stairs/StairLanding2_3.iso.png" width="128" height="224"/>
@@ -1081,6 +1256,7 @@
    <property name="3DMesh" value="StairLanding2.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="270"/>
+   <property name="RefAngle" value="270"/>
    <property name="Collision" value="L2"/>
   </properties>
   <image source="stairs/StairLanding2_4.iso.png" width="128" height="224"/>
@@ -1091,6 +1267,7 @@
    <property name="3DMesh" value="StairLanding3.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="0"/>
+   <property name="RefAngle" value="0"/>
    <property name="Collision" value="L3"/>
   </properties>
   <image source="stairs/StairLanding3_1.iso.png" width="128" height="224"/>
@@ -1101,6 +1278,7 @@
    <property name="3DMesh" value="StairLanding3.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="90"/>
+   <property name="RefAngle" value="90"/>
    <property name="Collision" value="L3"/>
   </properties>
   <image source="stairs/StairLanding3_2.iso.png" width="128" height="224"/>
@@ -1111,6 +1289,7 @@
    <property name="3DMesh" value="StairLanding3.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="180"/>
+   <property name="RefAngle" value="180"/>
    <property name="Collision" value="L3"/>
   </properties>
   <image source="stairs/StairLanding3_3.iso.png" width="128" height="224"/>
@@ -1121,6 +1300,7 @@
    <property name="3DMesh" value="StairLanding3.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="270"/>
+   <property name="RefAngle" value="270"/>
    <property name="Collision" value="L3"/>
   </properties>
   <image source="stairs/StairLanding3_4.iso.png" width="128" height="224"/>
@@ -1131,6 +1311,8 @@
    <property name="3DMesh" value="G_StraightStairsC.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="0"/>
+   <property name="RefAngle" value="90"/>
+   <property name="Collision" value="SS3"/>
   </properties>
   <image source="stairs/G_StraightStairsC_1.iso.png" width="128" height="224"/>
  </tile>
@@ -1140,6 +1322,8 @@
    <property name="3DMesh" value="G_StraightStairsC.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="90"/>
+   <property name="RefAngle" value="180"/>
+   <property name="Collision" value="SS3"/>
   </properties>
   <image source="stairs/G_StraightStairsC_2.iso.png" width="128" height="224"/>
  </tile>
@@ -1149,6 +1333,8 @@
    <property name="3DMesh" value="G_StraightStairsC.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="180"/>
+   <property name="RefAngle" value="270"/>
+   <property name="Collision" value="SS3"/>
   </properties>
   <image source="stairs/G_StraightStairsC_3.iso.png" width="128" height="224"/>
  </tile>
@@ -1158,6 +1344,8 @@
    <property name="3DMesh" value="G_StraightStairsC.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="270"/>
+   <property name="RefAngle" value="0"/>
+   <property name="Collision" value="SS3"/>
   </properties>
   <image source="stairs/G_StraightStairsC_4.iso.png" width="128" height="224"/>
  </tile>
@@ -1167,7 +1355,8 @@
    <property name="3DMesh" value="F_StraightStairsA.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="0"/>
-   <property name="Collision" value="E1"/>
+   <property name="RefAngle" value="0"/>
+   <property name="Collision" value="SS1"/>
   </properties>
   <image source="stairs/F_StraightStairsA_1.iso.png" width="128" height="224"/>
  </tile>
@@ -1177,7 +1366,8 @@
    <property name="3DMesh" value="F_StraightStairsA.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="90"/>
-   <property name="Collision" value="E1"/>
+   <property name="RefAngle" value="90"/>
+   <property name="Collision" value="SS1"/>
   </properties>
   <image source="stairs/F_StraightStairsA_2.iso.png" width="128" height="224"/>
  </tile>
@@ -1187,7 +1377,8 @@
    <property name="3DMesh" value="F_StraightStairsA.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="180"/>
-   <property name="Collision" value="E1"/>
+   <property name="RefAngle" value="180"/>
+   <property name="Collision" value="SS1"/>
   </properties>
   <image source="stairs/F_StraightStairsA_3.iso.png" width="128" height="224"/>
  </tile>
@@ -1197,7 +1388,8 @@
    <property name="3DMesh" value="F_StraightStairsA.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="270"/>
-   <property name="Collision" value="E1"/>
+   <property name="RefAngle" value="270"/>
+   <property name="Collision" value="SS1"/>
   </properties>
   <image source="stairs/F_StraightStairsA_4.iso.png" width="128" height="224"/>
  </tile>
@@ -1207,7 +1399,8 @@
    <property name="3DMesh" value="F_StraightStairsB.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="0"/>
-   <property name="Collision" value="E2"/>
+   <property name="RefAngle" value="0"/>
+   <property name="Collision" value="SS2"/>
   </properties>
   <image source="stairs/F_StraightStairsB_1.iso.png" width="128" height="224"/>
  </tile>
@@ -1217,7 +1410,8 @@
    <property name="3DMesh" value="F_StraightStairsB.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="90"/>
-   <property name="Collision" value="E2"/>
+   <property name="RefAngle" value="90"/>
+   <property name="Collision" value="SS2"/>
   </properties>
   <image source="stairs/F_StraightStairsB_2.iso.png" width="128" height="224"/>
  </tile>
@@ -1227,7 +1421,8 @@
    <property name="3DMesh" value="F_StraightStairsB.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="180"/>
-   <property name="Collision" value="E2"/>
+   <property name="RefAngle" value="180"/>
+   <property name="Collision" value="SS2"/>
   </properties>
   <image source="stairs/F_StraightStairsB_3.iso.png" width="128" height="224"/>
  </tile>
@@ -1237,7 +1432,8 @@
    <property name="3DMesh" value="F_StraightStairsB.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="270"/>
-   <property name="Collision" value="E2"/>
+   <property name="RefAngle" value="270"/>
+   <property name="Collision" value="SS2"/>
   </properties>
   <image source="stairs/F_StraightStairsB_4.iso.png" width="128" height="224"/>
  </tile>
@@ -1247,7 +1443,8 @@
    <property name="3DMesh" value="F_StraightStairsC.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="0"/>
-   <property name="Collision" value="E3"/>
+   <property name="RefAngle" value="0"/>
+   <property name="Collision" value="SS3"/>
   </properties>
   <image source="stairs/F_StraightStairsC_1.iso.png" width="128" height="224"/>
  </tile>
@@ -1257,7 +1454,8 @@
    <property name="3DMesh" value="F_StraightStairsC.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="90"/>
-   <property name="Collision" value="E3"/>
+   <property name="RefAngle" value="90"/>
+   <property name="Collision" value="SS3"/>
   </properties>
   <image source="stairs/F_StraightStairsC_2.iso.png" width="128" height="224"/>
  </tile>
@@ -1267,7 +1465,8 @@
    <property name="3DMesh" value="F_StraightStairsC.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="180"/>
-   <property name="Collision" value="E3"/>
+   <property name="RefAngle" value="180"/>
+   <property name="Collision" value="SS3"/>
   </properties>
   <image source="stairs/F_StraightStairsC_3.iso.png" width="128" height="224"/>
  </tile>
@@ -1277,7 +1476,8 @@
    <property name="3DMesh" value="F_StraightStairsC.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="270"/>
-   <property name="Collision" value="E3"/>
+   <property name="RefAngle" value="270"/>
+   <property name="Collision" value="SS3"/>
   </properties>
   <image source="stairs/F_StraightStairsC_4.iso.png" width="128" height="224"/>
  </tile>
@@ -1287,7 +1487,8 @@
    <property name="3DMesh" value="F_StraightStairsD.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="0"/>
-   <property name="Collision" value="E4"/>
+   <property name="RefAngle" value="0"/>
+   <property name="Collision" value="SS4"/>
   </properties>
   <image source="stairs/F_StraightStairsD_1.iso.png" width="128" height="224"/>
  </tile>
@@ -1297,7 +1498,8 @@
    <property name="3DMesh" value="F_StraightStairsD.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="90"/>
-   <property name="Collision" value="E4"/>
+   <property name="RefAngle" value="90"/>
+   <property name="Collision" value="SS4"/>
   </properties>
   <image source="stairs/F_StraightStairsD_2.iso.png" width="128" height="224"/>
  </tile>
@@ -1307,7 +1509,8 @@
    <property name="3DMesh" value="F_StraightStairsD.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="180"/>
-   <property name="Collision" value="E4"/>
+   <property name="RefAngle" value="180"/>
+   <property name="Collision" value="SS4"/>
   </properties>
   <image source="stairs/F_StraightStairsD_3.iso.png" width="128" height="224"/>
  </tile>
@@ -1317,7 +1520,8 @@
    <property name="3DMesh" value="F_StraightStairsD.mesh"/>
    <property name="Material" value="StraightStairs"/>
    <property name="RotAngle" value="270"/>
-   <property name="Collision" value="E4"/>
+   <property name="RefAngle" value="270"/>
+   <property name="Collision" value="SS4"/>
   </properties>
   <image source="stairs/F_StraightStairsD_4.iso.png" width="128" height="224"/>
  </tile>
@@ -1327,6 +1531,7 @@
    <property name="3DMesh" value="G_SpiralStairsR1mA.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="0"/>
+   <property name="RefAngle" value="0"/>
    <property name="Collision" value="SS1"/>
   </properties>
   <image source="stairs/G_SpiralStairsR1mA_1.iso.png" width="128" height="224"/>
@@ -1337,6 +1542,7 @@
    <property name="3DMesh" value="G_SpiralStairsR1mA.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="90"/>
+   <property name="RefAngle" value="90"/>
    <property name="Collision" value="SS1"/>
   </properties>
   <image source="stairs/G_SpiralStairsR1mA_2.iso.png" width="128" height="224"/>
@@ -1347,6 +1553,7 @@
    <property name="3DMesh" value="G_SpiralStairsR1mA.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="180"/>
+   <property name="RefAngle" value="180"/>
    <property name="Collision" value="SS1"/>
   </properties>
   <image source="stairs/G_SpiralStairsR1mA_3.iso.png" width="128" height="224"/>
@@ -1357,6 +1564,7 @@
    <property name="3DMesh" value="G_SpiralStairsR1mA.mesh"/>
    <property name="Material" value="SpiralStairsR1m"/>
    <property name="RotAngle" value="270"/>
+   <property name="RefAngle" value="270"/>
    <property name="Collision" value="SS1"/>
   </properties>
   <image source="stairs/G_SpiralStairsR1mA_4.iso.png" width="128" height="224"/>

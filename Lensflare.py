@@ -26,6 +26,7 @@ class LensFlare:
         self.createlensflare()
         self.setLightPosition(LightPosition)
         self.raydir=self.mLightPosition-self.mCamera.getDerivedPosition()
+        self.mCamerapos=self.mCamera.getDerivedPosition()
         self.ray=Ogre.Ray(self.mCamera.getDerivedPosition(),self.raydir)
         self.query=self.mSceneMgr.createRayQuery(self.ray)
         self.query.getSortByDistance()
@@ -75,20 +76,19 @@ class LensFlare:
         self.LF_Burst2.setDimensions(self.LF_scale*0.5,self.LF_scale*0.5)
         self.LF_Burst3 = self.mBurstSet.createBillboard(0,0,0)
         self.LF_Burst3.setDimensions(self.LF_scale*0.25,self.LF_scale*0.25)
- 
-
 
          #-------------------------------------------------------------------------- */
          #This function updates the lensflare effect. 
          #This function should be called by your frameListener.
          #
-         #-------------------------------------------------------------------------- */
- 
+         #-------------------------------------------------------------------------- */  
+    
     def drawray(self):
         if self.line==None:
             linenode=self.mSceneMgr.getRootSceneNode().createChildSceneNode()
             self.line=drawline(self.mSceneMgr,self.mLightPosition,self.mCamerapos)    
             linenode.attachObject(self.line)
+            self.line.setVisible(False)
         else:
             updateline(self.line,self.mLightPosition,self.mCamerapos)
     

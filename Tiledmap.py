@@ -163,19 +163,7 @@ class Game(OgreBites.ApplicationContext, OgreBites.InputListener):
         # Setup the scene
         #night light
         self.Sky=Skyefect.NightSky(scn_mgr,Ogre.Vector3(1500,3000,10000),self.cam)
-
-#        spotlight=scn_mgr.createLight("MoonLight2")
-#        spotlight.setType(Ogre.Light.LT_SPOTLIGHT);
-#        spotlight.setDiffuseColour(Ogre.ColourValue(.02, .2, .9));
-#        spotlight.setSpecularColour(Ogre.ColourValue(0, 0, .5))
-#        spotlight.setSpotlightInnerAngle(Ogre.Radian(0.09))
-#        spotlight.setSpotlightOuterAngle(Ogre.Radian(3))
-#        spotlight.setSpotlightFalloff(.0)
-#        spotLightNode = Playernode.createChildSceneNode()
-#        spotLightNode.setPosition(Ogre.Vector3(3, 3, 3))
-#        spotlight.setDirection(0, -1, -0.7)
-#        spotLightNode.attachObject(spotlight)
-        #spotlight.setCastShadows(True)
+        self.Sky.lensflare.drawray()
         
         # Creamos una pointlight sobre el player
         pointLight = scn_mgr.createLight("PointLight")

@@ -47,7 +47,7 @@ class LiveObject(object):
         if self.angle<-2*np.pi:
             self.angle+=2*np.pi
         self.direccion[0]=np.cos(self.angle)
-        self.direccion[1]=-np.sin(self.angle) 
+        self.direccion[1]=-np.sin(self.angle)
             
     def actualiza(self,t):
         self.actualizafisica(t,9.81)
@@ -117,9 +117,11 @@ class LiveObject(object):
         
         #vamos a comprobar si en el punto alto chocamos
         if self.mapa.wallsheight(self,pos[0],pos[1],self.z+height,self.OFFSET)>self.z+height:
+            print ("choco con el techo")
             return True
-            
-        if self.mapa.wallsheight(self,pos[0],pos[1],self.z+0.2,self.OFFSET)-self.z>0.3: #Este es el salto maximo que se puede hacer
+        
+        # Vamos a ver si el escalon es lo suficientemente bajo    
+        if self.mapa.wallsheight(self,pos[0],pos[1],self.z+0.2,self.OFFSET)-self.z>0.5: #Este es el salto maximo que se puede hacer
             return True
         else:
             return False
